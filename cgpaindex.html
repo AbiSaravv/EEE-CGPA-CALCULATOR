@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center></center>
+    <title>EEE CGPA Calculator</title>
+    <script src="cgpascript.js"> </script>
+    <link rel="stylesheet" href="cgpastyles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+ 
+        }
+
+        .moving-text-container {
+            position: absolute;
+            width: 100%;
+            height: 50px; /* Adjust height as needed */
+            overflow: hidden;
+            background-color: white;
+            margin-top:90px;
+    
+            
+        }
+
+        .moving-text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            white-space: nowrap;
+            font-size: 24px;
+            font-weight: bold;
+            animation: moveText 20s linear infinite, blinkText 0.5s infinite alternate;
+            cursor: pointer;
+            width: auto; /* Ensure text width is dynamic */
+        }
+
+        @keyframes moveText {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(100vw - 100%)); }
+        }
+
+        @keyframes blinkText {
+            0%, 100% { color: red; }
+            25% { color: green; }
+            50% { color: blue; }
+            75% { color: yellow; }
+        }
+    </style>
+
+
+</head>
+<body>
+    <center><h1>CGPA Calculator</h1></center>
+    
+    
+    <h3>Made for EEE R2021</h3>
+
+    <div class="onee">
+        <form class="one" action="cgpaindex2.html" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z ]+" required><br><br>
+    
+            <label for="regNumber">Register Number:</label>
+            <input type="number" id="regNumber" name="regNumber" required><br><br>
+    
+            <label for="mailId">Mail ID:</label>
+            <input type="email" id="mailId" name="mailId" required><br><br>
+    
+            <button type="submit" onclick="submitform()" >Submit</button>
+        </form>
+    </div>
+
+    <div class="moving-text-container">
+        <h2 class="moving-text" id="movingText">Girls and dogs are not allowed, want to know why..? <a href=https://www.youtube.com/watch?v=pXaSFN9VYbw target="_blank">click here</a></h2>
+    </div>
+
+    <script>
+        const textElement = document.getElementById('movingText');
+
+        let animationId;
+        let isStopped = false;
+
+        function moveText() {
+            if (!isStopped) {
+                textElement.style.transform = 'translateX(0)';
+                setTimeout(() => {
+                    textElement.style.transform = 'translateX(calc(100vw - 100%))';
+                }, 9500); // Adjust delay as needed (10s - 500ms)
+            }
+            animationId = requestAnimationFrame(moveText);
+        }
+
+        function stopAnimation() {
+            isStopped = true;
+        }
+
+        function resumeAnimation() {
+            isStopped = false;
+        }
+
+        textElement.addEventListener('mouseenter', stopAnimation);
+        textElement.addEventListener('mouseleave', resumeAnimation);
+
+        moveText(); // Start the animation initially
+    </script>
+
+    <p class="h">About      |      Developer     |    Feedback </p>
+
+
+
+    
+
+
+    
+</body>
+</html>

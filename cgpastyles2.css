@@ -1,0 +1,46 @@
+h1{
+    background-color: chocolate;
+    color: yellow;
+    padding: 10px;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    color: chocolate;
+
+}
+
+select,button{
+    background-color: yellow;
+    color: chocolate;
+    border-radius: 5px;
+    border-color: chocolate;
+    padding: 5px;
+    border-width: 1px;
+    margin: 3px;
+    cursor: pointer;
+
+}
+
+*{
+    text-align: center;
+}
+
+.on{
+    padding: 20px;
+    background-color: chocolate;
+    color: yellow;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+   
+
+}
+
+

@@ -1,0 +1,92 @@
+
+ *{
+   font-family: ubuntu;
+ }
+ 
+ 
+ 
+ h1{
+    padding: 20px;
+    background-color:chocolate;
+    color: yellow;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 10px;
+    margin:center;
+    width:100%;
+ }
+
+ h3{
+    text-align: center;
+    color: chocolate;
+ }
+
+
+.onee{
+    margin-top: 50px;
+    text-align: center;
+    background-color: chocolate;
+    width: 60%;
+    height: 200px;
+    border-radius: 20px;
+    padding-top: 50px;
+    color: yellow;
+    margin-left:19%;
+    
+}
+
+
+h2{
+  
+  margin-top: 10px;
+  
+  
+}
+
+input{
+    color: black
+}
+
+p{
+    text-align: center;
+    width: 100%;
+    height:100px;
+    background-color: chocolate;
+    color: yellow;
+    padding-top: 40px;
+    margin-top: 11%;
+    padding-bottom: 200px;
+    border-radius: 10px;
+    margin-right:0%;
+
+}
+
+button{
+    border-radius: 5px;
+    background-color: yellow;
+    color: chocolate;
+    box-sizing: content-box;
+    border-color: yellow;
+
+}
+
+.h:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

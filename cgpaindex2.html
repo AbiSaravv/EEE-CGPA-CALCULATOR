@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculation</title>
+    <link rel="stylesheet" href="cgpastyles2.css">
+
+    <script src="cgpascript2.js"></script>
+    <style>
+        #calculateCGPABtn {
+            display: none; /* Hide the Calculate CGPA button initially */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">CGPA Calculator</h1>
+    <h3 class="me">Webpage was designed and developed by @Abi_Saravv </h3>
+
+    <div class="one"> <form id="semesterForm">
+        <label for="startSemester">Select Starting Semester:</label>
+        <select id="startSemester" name="startSemester">
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+        </select>
+
+        <label for="endSemester">Select Ending Semester:</label>
+        <select id="endSemester" name="endSemester">
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+        </select>
+
+        <button type="button" onclick="showSubjects()">Show Subjects</button>
+        
+    </form> </div>
+
+
+    
+
+    <div id="subjectCodes"></div>
+    <div id="resultContainer"></div>
+    <div id="gpaOutput"></div>
+    <div id="cgpaOutput"></div>
+    <div id="sem5UnknownCredits"></div>
+    <div id="sem6UnknownCredits"></div>
+
+    <button class=" on"   id="calculateCGPABtn" type="button" onclick="calculateCGPA()">Calculate CGPA</button>
+    
+    
+</body>
+</html>
+
+
+
+
